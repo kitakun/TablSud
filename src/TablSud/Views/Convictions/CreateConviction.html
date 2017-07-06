@@ -1,0 +1,67 @@
+﻿@Master['MasterPage'];
+
+@Section['Content']
+<div class="well well-lg">
+    <form action="/SudTable/NewConv" method="post">
+        <div class="row">
+            <div class="whiteblock row">
+                <div class="form-group col-xs-12 col-md-6">
+                    <label for="usr">Наименование суда:</label>
+                    <textarea type="text" class="form-control" name="CourtName"></textarea>
+                </div>
+                <div class="form-group col-xs-12 col-md-6">
+                    <label for="usr">Номер дела:</label>
+                    <input type="text" class="form-control" name="CaseNumber">
+                </div>
+            </div>
+
+            <div class="whiteblock row">
+                <!-- sides -->
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label for="usr">Истец:</label>
+                    <input type="text" class="form-control" name="SidePlaintiff">
+                </div>
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label for="usr">Ответчик:</label>
+                    <input type="text" class="form-control" name="SideDefendant">
+                </div>
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label for="usr">Третьи лица:</label>
+                    <input type="text" class="form-control" name="SideThirdPartyMember">
+                </div>
+            </div>
+
+            <div class="whiteblock row">
+                <!-- ModelConvictionProgress -->
+                <div class="form-group col-xs-12 col-md-9">
+                    <label for="usr">Процессуальные действия и стадии судебного производства:</label>
+                    <textarea type="text" class="form-control" name="ActionsOrStages"></textarea>
+                </div>
+                <div class="form-group col-xs-12 col-md-3">
+                    <label for="usr">Дата:</label>
+                    <input type="text" class="form-control" name="Date">
+                </div>
+            </div>
+
+
+            <div class="whiteblock row">
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label for="usr">Требования:</label>
+                    <textarea type="text" class="form-control" name="Requirements"></textarea>
+                </div>
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label for="usr">Результат рассмотрения дела:</label>
+                    <textarea type="text" class="form-control" name="ConsiderationResult"></textarea>
+                </div>
+                <div class="form-group col-xs-12 col-sm-4">
+                    <label for="usr">Сведения об исполнении:</label>
+                    <textarea type="text" class="form-control" name="PerformanceInformation"></textarea>
+                </div>
+            </div>
+
+        </div>
+                    
+        <input type="submit" class="btn btn-success" value="Добавить" />
+    </form>
+</div>
+@EndSection

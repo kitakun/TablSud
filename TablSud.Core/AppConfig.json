@@ -1,0 +1,4 @@
+{
+  "ServerUrl": "mongodb://localhost:27017",
+  "DatabaseName" :  "TablSud" 
+}

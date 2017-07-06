@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TablSud.Core\TablSud.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation">
+      <HintPath>C:\Users\KitKit\.nuget\packages\microsoft.aspnetcore.cryptography.keyderivation\1.1.2\lib\netstandard1.3\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy">
+      <HintPath>C:\Users\KitKit\.nuget\packages\nancy\2.0.0-clinteastwood\lib\netstandard1.6\Nancy.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy.Authentication.Basic">
+      <HintPath>C:\Users\KitKit\.nuget\packages\nancy.authentication.basic\2.0.0-clinteastwood\lib\netstandard1.6\Nancy.Authentication.Basic.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy.Authentication.Forms">
+      <HintPath>C:\Users\KitKit\.nuget\packages\nancy.authentication.forms\2.0.0-clinteastwood\lib\netstandard1.6\Nancy.Authentication.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>C:\Users\KitKit\.nuget\packages\system.security.claims\4.0.1\ref\netstandard1.3\System.Security.Claims.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

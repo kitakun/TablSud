@@ -1,0 +1,30 @@
+﻿@Master['MasterPage'];
+
+@Section['Content']
+    <form class="register-form" action="register" method="post">
+        <input type="text" placeholder="name" name="username"/>
+        <input type="password" placeholder="password" name="password"/>
+        <input type="submit" class="btn btn-success" Value="Регистрация"/>
+        <p class="message">Есть аккаунт? <a href="#">Войти</a></p>
+    </form>
+
+<form class="login-form" action="login" method="post">
+    <input type="text" placeholder="username" name="username"/>
+    <input type="password" placeholder="password" name="password"/>
+    <input type="submit" class="btn btn-success" Value="Вход"/>
+    <!--<p class="message">Нет аккаунта? <a href="#">Создать новый</a></p>-->
+</form>
+<div class="has-error">
+    <label class="control-label">@Model.Error</label>
+</div>
+@EndSection
+
+@Section['Script']
+<script src="~/Content/js/Login.js"></script>
+@EndSection
+
+@Section['Style']
+<link href="~/Content/css/LoginStyle.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+@EndSection

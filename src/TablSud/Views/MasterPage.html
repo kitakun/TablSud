@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+		
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet">
+    <link href="~/Content/css/Home.css" rel="stylesheet">
+    <link href="~/Content/css/tablsud.css" rel="stylesheet">
+    @Section['Style']
+</head>
+<body>
+<div class="background"></div>
+<div class="container">
+    <div class="tutorial">
+        <ul>
+            <a href="../">
+                <li>
+                    Главная <i class="fa fa-angle-down"></i>
+                    <ul>
+                        <a href="SudTable/NewConv"><li>Добавить</li></a>
+                        <a href="SudTable/DeleteAll"><li>Удалить всё</li></a>
+                    </ul>
+                </li>
+            </a>
+        </ul>
+        <div class="information">
+            @Section['Content']
+        </div>
+    </div>
+</div><link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</body>
+
+<script src="~/Content/js/jquery-3.2.1.min.js"></script>
+<script src="~/Content/js/bootstrap.min.js"></script>
+<script src="~/Content/js/Home.js"></script>
+@Section['Script']
+</html>
